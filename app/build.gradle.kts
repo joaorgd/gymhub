@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.gymfy" // Ajustei para o padrão que estávamos usando
+    namespace = "com.example.gymhub" // Ajustei para o padrão que estávamos usando
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.gymfy"
+        applicationId = "com.example.gymhub"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

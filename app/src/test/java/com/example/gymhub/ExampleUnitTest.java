@@ -1,4 +1,4 @@
-package com.example.gymfy;
+package com.example.gymhub;
 
 import org.junit.Test;
 

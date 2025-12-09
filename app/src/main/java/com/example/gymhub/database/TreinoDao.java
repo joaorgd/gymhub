@@ -1,4 +1,4 @@
-package com.example.gymfy.database;
+package com.example.gymhub.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;

@@ -1,4 +1,4 @@
-package com.example.gymfy;
+package com.example.gymhub;
 
 import android.content.Context;
 

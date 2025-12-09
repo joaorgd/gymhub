@@ -1,4 +1,4 @@
-package com.example.gymfy.database;
+package com.example.gymhub.database;
 
 import android.content.Context;
 import androidx.room.Database;
