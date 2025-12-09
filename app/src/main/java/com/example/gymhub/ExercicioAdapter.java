@@ -1,5 +1,7 @@
 package com.example.gymhub;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +32,8 @@ public class ExercicioAdapter extends RecyclerView.Adapter<ExercicioAdapter.Exer
     @Override
     public void onBindViewHolder(@NonNull ExercicioViewHolder holder, int position) {
         Exercicio exercicio = listaExercicios.get(position);
+
+        // Preenche os dados visuais
         holder.tvNome.setText(exercicio.nome);
         holder.tvGrupo.setText(exercicio.grupoMuscular.toUpperCase());
 
@@ -40,11 +44,12 @@ public class ExercicioAdapter extends RecyclerView.Adapter<ExercicioAdapter.Exer
             holder.tvObs.setVisibility(View.GONE);
         }
 
+        // --- LÓGICA DE CLIQUE (Adicionada) ---
         holder.itemView.setOnClickListener(view -> {
-            android.content.Context context = view.getContext();
-            android.content.Intent intent = new android.content.Intent(context, DetalhesExercicioActivity.class);
+            Context context = view.getContext();
+            Intent intent = new Intent(context, DetalhesExercicioActivity.class);
 
-            // Passamos os dados para a próxima tela
+            // Passa os dados para a próxima tela
             intent.putExtra("EXTRA_ID", exercicio.id);
             intent.putExtra("EXTRA_NOME", exercicio.nome);
             intent.putExtra("EXTRA_GRUPO", exercicio.grupoMuscular);
