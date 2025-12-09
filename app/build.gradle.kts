@@ -31,7 +31,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    // Removi o bloco kotlinOptions pois seu foco é Java
 }
 
 dependencies {
