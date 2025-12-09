@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registar Série"
+            android:text="@string/titulo_dialog"
             android:textColor="@color/text_primary"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -39,7 +39,7 @@
                 android:id="@+id/editCarga"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Carga (kg)"
+                android:hint="@string/hint_carga"
                 android:inputType="numberDecimal"
                 android:textColor="@color/text_primary"
                 android:textColorHint="@color/text_secondary"/>
@@ -61,7 +61,7 @@
                 android:id="@+id/editReps"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Repetições"
+                android:hint="@string/hint_reps"
                 android:inputType="number"
                 android:textColor="@color/text_primary"
                 android:textColorHint="@color/text_secondary"/>
@@ -79,7 +79,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Cancelar"
+                android:text="@string/btn_cancelar"
                 android:textColor="@color/text_secondary"/>
 
             <Button
@@ -87,10 +87,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Salvar"
+                android:text="@string/btn_salvar"
                 android:backgroundTint="@color/pink_accent"
                 android:textColor="@color/white"/>
         </LinearLayout>
-
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

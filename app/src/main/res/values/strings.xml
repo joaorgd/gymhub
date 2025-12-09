@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Gymfy</string>
+    <string name="app_name">GymHub</string>
+
+    <string name="titulo_dialog">Registrar Carga</string>
+
+    <string name="hint_carga">Carga (kg)</string>
+
+    <string name="hint_reps">Repetições</string>
+
+    <string name="btn_salvar">Salvar</string>
+
+    <string name="btn_cancelar">Cancelar</string>
+
+    <string name="hint_obs">Observações (opcional)</string>
 </resources>
