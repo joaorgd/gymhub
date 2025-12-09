@@ -39,6 +39,18 @@ public class ExercicioAdapter extends RecyclerView.Adapter<ExercicioAdapter.Exer
         } else {
             holder.tvObs.setVisibility(View.GONE);
         }
+
+        holder.itemView.setOnClickListener(view -> {
+            android.content.Context context = view.getContext();
+            android.content.Intent intent = new android.content.Intent(context, DetalhesExercicioActivity.class);
+
+            // Passamos os dados para a próxima tela
+            intent.putExtra("EXTRA_ID", exercicio.id);
+            intent.putExtra("EXTRA_NOME", exercicio.nome);
+            intent.putExtra("EXTRA_GRUPO", exercicio.grupoMuscular);
+
+            context.startActivity(intent);
+        });
     }
 
     @Override
